@@ -27,7 +27,7 @@ class OutputsSpec extends StandaloneBase {
     }
 
     def "Create output"() {
-        def data = [type: "rabbitmq", url: "amqp://127.0.0.1/"]
+        def data = [type: "rabbitmq", url: "amqp://mac-subs-009/"]
         def ans = POST("/db/foo/q/bar/out/rabbit", data)
         def ans2 = POST("/db/foo/q/bar/out/rabbit", data)
 

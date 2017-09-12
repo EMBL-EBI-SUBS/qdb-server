@@ -27,7 +27,7 @@ class InputsSpec extends StandaloneBase {
     }
 
     def "Create input"() {
-        def data = [type: "rabbitmq", url: "amqp://127.0.0.1/", enabled: false]
+        def data = [type: "rabbitmq", url: "amqp://mac-subs-009/", enabled: false]
         def ans = POST("/db/foo/q/bar/in/rabbit", data)
         def ans2 = POST("/db/foo/q/bar/in/rabbit", data)
 

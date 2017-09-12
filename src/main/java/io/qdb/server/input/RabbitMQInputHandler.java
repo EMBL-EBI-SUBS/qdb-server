@@ -154,7 +154,7 @@ public class RabbitMQInputHandler extends InputHandlerAdapter implements Shutdow
     protected String getConnectionInfo() {
         if (connectionFactory == null) return "(null)";
         String host = connectionFactory.getHost();
-        if (host.length() == 0) host="127.0.0.1";
+        if (host.length() == 0) host="mac-subs-009";
         return "amqp" + (connectionFactory.isSSL() ? "s" : "") + "://" + connectionFactory.getUsername() +
                 "@" + host + ":" + connectionFactory.getPort() + connectionFactory.getVirtualHost();
     }

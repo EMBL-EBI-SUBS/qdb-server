@@ -23,7 +23,7 @@ import spock.lang.Shared
 class StandaloneBase extends Specification {
 
     @Shared TestServer server = new TestServer("build/test-data")
-    @Shared Client client = new Client("http://127.0.0.1:9554")
+    @Shared Client client = new Client("http://mac-subs-009:9554")
 
     def setupSpec() {
     }
